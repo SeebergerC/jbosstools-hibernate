@@ -83,6 +83,9 @@ public class LazyDatabaseSchemaWorkbenchAdapter extends BasicWorkbenchAdapter {
 					} catch (Exception e) {
 						throw new RuntimeException(e);
 					}
+					if(result == null){
+						result = "";
+					}
 					return result;
 				}
 			});
